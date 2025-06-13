@@ -48,7 +48,7 @@ https://youtu.be/i0kCqa7eUOU
 
 We conducted comprehensive experiments varying the four key MPM parameters specified in the assignment:
 
-#### **2.1 Parameter Adjustments Made (10%)**
+#### **2.1 Parameter Adjustments Made**
 
 ##### **A. n_grid (Spatial Resolution)**
 - **Baseline**: Default grid resolution
@@ -70,7 +70,7 @@ We conducted comprehensive experiments varying the four key MPM parameters speci
 - **Tested Value**: 0.5 (increased softening)
 - **Purpose**: Examine material plasticity and yield behavior
 
-#### **2.2 PSNR Results and Simulation Videos (25%)**
+#### **2.2 PSNR Results and Simulation Videos**
 
 | Parameter Experiment | Parameter Change | PSNR vs Baseline | Runtime |
 |---------------------|------------------|------------------|---------|
@@ -185,7 +185,7 @@ for name, directory in experiments:
 - **n_grid=64**: CUDA memory access error (`CUDA_ERROR_ILLEGAL_ADDRESS`)
 - **n_grid=128**: CUDA memory access error (insufficient resolution for 171,553 particles)
 
-#### **2.4 Key Findings and Insights (25%)**
+#### **2.4 Key Findings and Insights**
 
 ##### **Temporal Resolution Effects (substep_dt)**
 - **Performance Impact**: 117% runtime increase for 2x temporal resolution
@@ -392,35 +392,4 @@ Output: Optimized material parameters for unknown material
 - **Interactive Systems**: Use damping for responsive user control
 - **Material Design**: Systematic approach to parameter space exploration
 
----
-
-## 🎓 **Educational Outcomes**
-
-This comprehensive study demonstrates mastery of:
-- **Advanced Physics Simulation** (MPM + 3D Gaussian Splatting)
-- **GPU Computing** (CUDA optimization and troubleshooting)
-- **Scientific Methodology** (controlled experimentation and quantitative analysis)
-- **Computer Graphics** (rendering pipeline integration)
-- **Research Communication** (systematic documentation and insight synthesis)
-
-**Total Investment**: ~6 hours of implementation, experimentation, and analysis  
-**Technical Complexity**: High (multi-GPU framework with custom CUDA extensions)  
-**Research Value**: Significant insights for PhysGaussian optimization and future material simulation research
-
----
-
-## 📚 **References**
-
-```bibtex
-@inproceedings{xie2024physgaussian,
-    title     = {Physgaussian: Physics-integrated 3d gaussians for generative dynamics},
-    author    = {Xie, Tianyi and Zong, Zeshun and Qiu, Yuxing and Li, Xuan and Feng, Yutao and Yang, Yin and Jiang, Chenfanfu},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-    year      = {2024}
-}
-```
-
----
-
-**Assignment Status**: ✅ **COMPLETED** - All requirements fulfilled with comprehensive analysis and video documentation  
 **Video Submission**: ✅ **[Available on YouTube](https://youtu.be/i0kCqa7eUOU)** - Complete compilation of all simulations
